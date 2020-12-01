@@ -5,7 +5,7 @@ To use, you need Python3 and the listed packages. You will also need to create a
 
 - To create an API token, go to your Zenodo account settings and make a new token under the "Applications" menu. Enable both `deposit:actions` and `deposit:write`. Make sure to **copy and save the token** after creating it, but **never share** it with anyone else. You will not be able to see your token after creating it, but you can always delete it and create a new one if you forgot. After creating, **double-check that the `deposit` settings are enabled**.
 
-- After creating the token, edit the `update_community.py` script by setting it as the `access_token` variable.
+- After creating the token, edit the `update_community.py` script by setting the token as the `access_token` variable.
 
 - To process batches of records, you need the Zenodo record IDs for these records. List them in a text file similar to the examples in this repository, with `id` as a header.
 
