@@ -10,3 +10,5 @@ To use, you need Python3 and the listed packages. You will also need to create a
 - To process batches of records, you need the Zenodo record IDs for these records. List them in a text file similar to the examples in this repository, with `id` as a header.
 
 - To launch the script, you can run `python3 update_community.py filename.txt` from the directory where both the script and the list of ids (`filename.txt`) can be found.
+
+- To check whether everything went well, you can check the `quicklog upd.txt` file. All requests should give a response code of 200, 201 or 202. If there are any Python errors, they may be indicated here. Errors at the Zenodo side (e.g. 400, 403, 500) may be more extensively described in the logged JSON responses in the `updlog.txt` file. This file logs all JSON responses for all requests, so it may grow quite big, in particular if your records have a large number of files.
